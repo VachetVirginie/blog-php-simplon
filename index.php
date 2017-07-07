@@ -16,10 +16,11 @@ foreach ($array as $file) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>My Awesome Blog</title>
 </head>
-<body>
-    <h1>My Awesome Blog</h1>
+<body class="container">
+    <h1 class="text-center" >My Awesome Blog</h1>
     <nav><a href="create.html">New Post</a></nav>
     <?php foreach ($files as $file) { ?>
     <article>
