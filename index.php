@@ -23,7 +23,7 @@ foreach ($array as $file) {
     <h1 class="text-center" >My Awesome Blog</h1>
     <nav><a href="create.html">New Post</a></nav>
     <?php foreach ($files as $file) { ?>
-    <article>
+   <article class="col-sm-4 col-sm-offset-2" >
         <h2><?php echo basename($file, '.txt'); ?></h2>
         <p><?php echo file_get_contents('post/' . $file); ?></p>
         <form action="delete-post.php" method="POST">
