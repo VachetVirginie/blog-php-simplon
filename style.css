@@ -1,0 +1,190 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Roboto:400,500);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.4em;
+    color: #222;
+    background: #474747;
+}
+
+.container {
+    margin: 5%;
+}
+
+.twitter-follow-button {
+    margin-left: 2px;
+}
+
+div {
+    background-color: #333333;
+    color: white;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+nav {
+    background: #333;
+    overflow: auto;
+    padding: 5px;
+    position: relative;
+    z-index: 2;
+    margin: 5px;
+}
+
+nav h1 {
+    color: #eee;
+    font-family: 'Pacifico', cursive;
+    font-size: 42px;
+    float: left;
+}
+
+nav h1>a {
+    color: #3ab4a6;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: all 200ms linear;
+}
+
+nav h1>a:hover {
+    background: none;
+    color: #C18055;
+}
+
+ul {
+    text-align: center;
+    float: right;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 20px 10px;
+    margin: 0 10px;
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: bold;
+    transition: all 200ms linear;
+}
+
+nav a:hover,
+nav#small a:hover {
+    color: #C18055;
+}
+
+nav#small {
+    background: #fff;
+    padding: 0;
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 2px 2px #fff;
+}
+
+nav#small h1 {
+    color: #333;
+}
+
+nav#small a {
+    color: #333;
+    padding-top: 20px;
+}
+
+nav#small h1 {
+    font-size: 38px;
+}
+
+nav#small h1>a {
+    color: #C18055;
+}
+
+nav#small h1>a:hover {
+    color: #3ab4a6;
+}
+
+div#content {
+    height: 2200px;
+    background: url('https://s-media-cache-ak0.pinimg.com/originals/03/95/6f/03956fed74537b3d7b0858e9a814748d.jpg')repeat 0 0;
+    opacity: 0.9;
+}
+
+div#content h2 {
+    color: #fff;
+    font-weight: bold;
+    transform: rotate(-10deg);
+    line-height: 60px;
+    font-size: 48px;
+    text-transform: uppercase;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    width: 10%;
+    bottom: 10%;
+    text-shadow: 2px 2px 2px #333;
+    font-family: 'Pacifico', cursive;
+}
+
+div#content h2:before {
+    display: inline-block;
+    background: url('http://www.menoftheras.com/wp-content/gallery/test/arrow.png')no-repeat 0 0;
+    background-size: cover;
+    width: 239px;
+    height: 200px;
+    content: "";
+    transform: rotate(-80deg);
+    margin-bottom: 40px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        padding: 20px;
+    }
+    nav h1 {
+        display: block;
+        float: none;
+        text-align: center;
+        padding: 20px;
+    }
+    nav ul {
+        float: none;
+        padding: 20px;
+    }
+    div#content h2 {
+        width: 30%;
+    }
+    nav#small {
+        padding: 20px;
+    }
+    nav#small ul {
+        padding: 5px;
+    }
+    nav#small h1 {
+        padding: 10px;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+    nav#small a {
+        font-weight: normal;
+    }
+}
